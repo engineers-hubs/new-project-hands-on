@@ -1,0 +1,16 @@
+pipeline {
+
+agent any
+
+stages{
+
+    stage('Git Checkout'){
+        steps{
+            git branch: 'fix-alpha.txt', url: 'https://github.com/engineers-hubs/new-project-hands-on.git'
+        }
+    }
+}
+
+
+
+}
